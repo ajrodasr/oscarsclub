@@ -396,6 +396,9 @@ section {
     width: 100%;
 }
 
+#sesiones .grid3 a:hover img {
+    opacity: 0.5;
+}
 #sesiones span {
     color: rgb(155, 23, 0);
     font-weight: bold;

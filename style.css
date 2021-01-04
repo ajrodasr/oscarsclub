@@ -1,0 +1,527 @@
+html {
+    font-family: 'Noto Serif';
+}
+
+html {
+    background-color: rgb(232, 232, 232);
+}
+
+body{
+    margin: 0;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.flex {
+    display: flex;
+}
+
+.grid3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid1 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+@media (max-width: 650px){
+    .flex {
+        display: block;
+    }
+
+    .grid3 {
+        display: block;
+    }
+}
+
+/*HEADER*/
+
+header{
+    padding: 8px;
+    font-family: 'Open Sans';
+    align-items: center;
+    justify-content: center;
+}
+
+header #logo {
+    flex: 2;
+    font-size: 2em;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(28, 28, 28);
+    white-space: nowrap;
+    order:1;
+}
+
+header #logo img {
+    width: 50px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+header #logo span {
+    font-style: italic;
+    color: rgb(155, 23, 0);
+}
+
+header nav {
+    flex: 7;
+    text-align: center;
+    order:2;
+}
+
+header nav ul {
+    list-style: none;
+    text-align: center;
+    display: inline-flex;
+}
+
+header nav li {
+    margin: 0 15px;
+}
+
+header nav li a {
+    text-decoration: none;
+    color: rgb(28, 28, 28);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+header nav li a:hover{
+    color: rgb(28, 28, 28, 0.5);
+}
+
+header #inicioSesion {
+    flex: 1;
+    order:3;
+}
+
+header #inicioSesion a {
+    color: rgb(255, 255, 255);
+    background-color: rgb(155, 23, 0);
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+.active a{
+    font-style: italic;
+}
+
+@media (max-width: 650px){
+    header {
+        text-align: center;
+    }
+
+    header #inicioSesion {
+        text-align: center;
+        margin: 15px 0;
+    }
+
+    header nav ul {
+        display: block;
+        padding: 0;
+        margin: 15px 0;
+    }
+}
+
+/*FOOTER*/
+footer {
+    padding: 40px 8px 8px 8px;
+    background-color: rgb(67, 58, 68);
+    color: rgb(255, 255, 255);
+}
+
+footer a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+footer a:hover{
+    color: rgb(155, 23, 0);
+}
+
+footer #enlaces {
+    display: flex;
+}
+
+footer #enlaces div {
+    flex: 1;
+}
+
+footer ul {
+    display: inline-flex;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+footer ul li {
+    margin: 0 15px;
+}
+
+footer ul li:first-child {
+    list-style: none;
+    margin-left: 0;
+}
+
+footer #info p {
+    font-size: 0.8em;
+    line-height: 0.8;
+}
+
+footer #toTop {
+    font-size: 2em;
+    margin: 0;
+}
+
+@media (max-width: 650px){
+    footer #enlaces {
+        display: block;
+        text-align: center;
+    }
+
+    footer #enlaces div {
+        margin: 40px 0;
+    }
+
+    footer #info {
+        text-align: center;
+    }
+
+    footer ul li:first-child {
+        margin-left: 15px;
+    }
+
+    footer ul {
+        display: block;
+        list-style: none;
+        text-align: center;
+    }
+
+}
+
+/*INDEX*/
+section {
+    margin: 100px 0;
+}
+
+#index article {
+    text-align: center;
+    margin: 100px 10%;
+}
+
+#index article > p{
+    margin: 0 15%;
+}
+
+#index figure img {
+    width: 80%;
+}
+
+#registroClub div{
+    flex: 1;
+}
+
+#registroClub a {
+    text-decoration: none;
+    color: rgb(155, 23, 0);
+}
+
+#registroClub a:hover {
+    color: rgb(28, 28, 28);
+}
+
+#registroClub div > p {
+    font-size: 1.5em;
+}
+
+
+#registroClub ul {
+    list-style: none;
+    padding: 0;
+}
+
+#registroClub li {
+    margin-bottom: 15px;
+}
+
+#registroClub form p,
+#registroClub form label{
+    font-size: 0.7em;
+}
+
+#registroClub input[type="text"], 
+#registroClub input[type="email"], 
+#registroClub input[type="password"] {
+    width: 95%;
+    height: 20px;
+    padding: 10px;
+}
+
+#registroClub input[type="submit"] {
+    background-color: rgb(155, 23, 0);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#registroClub form {
+    font-family: 'Open Sans';
+}
+
+#registroClub input[type="submit"]:hover {
+    background-color: rgb(28, 28, 28);
+}
+
+@media (max-width: 650px){
+    #index article,
+    #index article > p {
+        margin: 0 5%;
+    }
+}
+
+/*CLUBES*/
+#clubes article {
+    text-align: center;
+    margin: 100px 10%;
+}
+
+#clubes .grid3 img {
+    width: 100%;
+}
+
+#clubes .grid3 div {
+    margin: 15px;
+    text-align: justify;
+}
+
+#clubes h3::before {
+    content: "····";
+    color: rgb(155, 23, 0);
+    margin-right: 15px;
+}
+
+#clubes a {
+    text-decoration: none;
+    color: rgb(155, 23, 0);
+}
+
+#clubes a:hover {
+    color: rgb(28, 28, 28);
+}
+
+@media (max-width: 650px){
+    #clubes article {
+        margin: 0 5%;
+    }
+
+    #clubes .grid3 div {
+        margin: 40px 0;
+    }
+
+    #clubes h3::before {
+        content: "······";
+    }
+}
+
+/*SESIONES*/
+#sesiones article {
+    margin: 100px 10%;
+}
+
+#sesiones h1,
+#sesiones h2,
+#sesiones h3,
+#sesiones li a,
+#sesiones span{
+    font-family: 'Open Sans';
+}
+
+#sesiones h1 {
+    text-align: center;
+}
+
+#sesiones section {
+    border-top: dashed;
+    border-color: rgb(155, 23, 0);
+    margin-top: 50px;
+}
+
+#sesiones section ul {
+    list-style: none;
+    padding: 0;
+    flex: 1;
+}
+
+#sesiones section ul li a {
+    text-decoration: none;
+    color: rgb(28, 28, 28);
+}
+
+#sesiones section ul li a:hover {
+    color: rgb(28, 28, 28, 0.5);
+}
+
+#sesiones h3::before {
+    content: "····";
+    color: rgb(155, 23, 0);
+    margin-right: 15px;
+}
+
+#sesiones .flex > div {
+    flex: 3;
+}
+
+#sesiones .grid3 a {
+    margin: 15px;
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+}
+
+#sesiones .grid3 a img {
+    width: 100%;
+}
+
+#sesiones .grid3 a:hover img {
+    opacity: 0.5;
+}
+#sesiones span {
+    color: rgb(155, 23, 0);
+    font-weight: bold;
+    align-self: end;
+    padding: 5px;
+}
+
+@media (max-width: 650px) {
+    
+    #sesiones article {
+        margin: 0 5%;
+    }
+
+    #sesiones .grid3 a {
+        margin: 15px 20%;
+    }
+}
+
+/*DETALLE SESION*/
+
+#detalleSesion article .flex > div:nth-child(1) {
+    flex: 2;
+    margin: 0 15px;
+}
+
+#detalleSesion article .flex > div:nth-child(2) {
+    flex: 3;
+    margin: 0 15px;
+}
+
+#detalleSesion ul {
+    list-style: none;
+}
+
+.breadcrumb {
+    margin: 50px 10%;
+    padding: 0;
+}
+
+.breadcrumb li {
+    display: inline-flex;
+    color: rgb(28, 28, 28, 0.5);
+}
+
+.breadcrumb li+li:before {
+    padding: 0 8px;
+    content: "/\00a0";
+}
+
+.breadcrumb li a {
+    text-decoration: none;
+    color: rgb(28, 28, 28);
+}
+
+.breadcrumb li a:hover {
+    color: rgb(28, 28, 28, 0.5);
+}
+
+#detalleSesion article {
+    margin: 50px 10%;
+}
+
+#detalleSesion #fichaTecnica > li:nth-child(2n+1) {
+    font-weight: bold;
+    border-bottom: solid 1px;
+    margin: 5px 0;
+}
+
+#detalleSesion img {
+    float: left;
+    border-radius: 50%;
+    shape-outside: circle(50%);
+    margin: 5px;
+}
+
+#detalleSesion h2 {
+    clear: both;
+}
+
+#detalleSesion p {
+    text-align: justify;
+}
+
+#detalleSesion .iframeVideo {
+    margin: 0;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 650px) {
+    
+    .breadcrumb {
+        margin: 50px 5%;
+        text-align: center;
+    }
+
+    #detalleSesion article {
+        margin: 50px 5%;
+    }
+
+    #detalleSesion article .flex > div {
+        margin: 0 !important;
+    }
+
+    #detalleSesion #fichaTecnica {
+        padding: 0;
+    }
+
+    #detalleSesion #fichaTecnica ul {
+        padding-left: 5%;
+    }
+
+    #detalleSesion p {
+        text-align: initial;
+    }
+}
+
+

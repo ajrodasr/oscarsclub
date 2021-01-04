@@ -46,7 +46,6 @@ body{
 
 header{
     padding: 8px;
-    display: flex;
     font-family: 'Open Sans';
     align-items: center;
     justify-content: center;
@@ -120,7 +119,6 @@ header #inicioSesion a {
 
 @media (max-width: 650px){
     header {
-        display: block;
         text-align: center;
     }
 
